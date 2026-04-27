@@ -1,11 +1,9 @@
-/* Naming Convention Example 
+/*
+ Naming Convention Example 
     - Struct names are in PascalCase (e.g., Person).
     - Function names and variable names are in camelCase (e.g., printPersonDetails(), firstName). 
     - Constants are in UPPER_SNAKE_CASE (e.g., MAX_AGE).
-    
-    -
-    
-    */
+*/
 
 #include <stdio.h>
 #include<stdbool.h>
@@ -45,7 +43,6 @@ int main()
 }
 
 /*
-
 Priority of naming if it multiple types
 1.g
 2.p
@@ -70,5 +67,4 @@ int incrementCounter(void)
 }
 Volatile- prevents compiler from making any assumption about the variable
 E.g use it for variables updated by ISR routine
-
 */
