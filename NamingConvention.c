@@ -44,32 +44,31 @@ int main()
     return 0;
 }
 
-//Priority of naming if it multiple types
-//1.g
-//2.p
-//3.normal - int, bool, handle
+/*
 
-//Variable keywords: const, static, volatile
+Priority of naming if it multiple types
+1.g
+2.p
+3.normal - int, bool, handle
+Variable keywords: const, static, volatile
+Constant- if within the function/file scope or in the runtime the variable is not going to be modified use const
+ const char  myName = "Anu";
+ const float mathPi = 3.14f;
+ void printThat(const int iWantToBeJustPrinted)
+{
+  print("The number to be printed is:%d",iWantToBeJustPrinted);
+}
+ int printMe=5;
+printThat(printMe);
+Static- Limits scope of the variable(i.e to file it is defined), used also only to define a variable only once within
+a function
+int incrementCounter(void)
+{
+  static int counter=0; //Only run first time of invocation after that the previous value of counter is retained
+  counter++;
+  return counter;
+}
+Volatile- prevents compiler from making any assumption about the variable
+E.g use it for variables updated by ISR routine
 
-//Constant- if within the function/file scope or in the runtime the variable is not going to be modified use const
-// const char  myName = "Anu";
-// const float mathPi = 3.14f;
-// void printThat(const int iWantToBeJustPrinted)
-//{
-//  print("The number to be printed is:%d",iWantToBeJustPrinted);
-//}
-// int printMe=5;
-//printThat(printMe);
-
-//Static- Limits scope of the variable(i.e to file it is defined), used also only to define a variable only once within
-//a function
-//int incrementCounter(void)
-//{
-//  static int counter=0; //Only run first time of invocation after that the previous value of counter is retained
-//  counter++;
-//  return counter;
-//}
-
-
-//Volatile- prevents compiler from making any assumption about the variable
-//E.g use it for variables updated by ISR routine
+*/
